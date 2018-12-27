@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {view as Login} from './login/';
 import {view as Regist} from './regist/';
+import {view as Main} from './main/';
 import './App.css';
 
 class App extends Component {
@@ -9,6 +10,7 @@ class App extends Component {
       <div className="App">
         <Login />
         <Regist />
+        <Main />
       </div>
     );
   }
