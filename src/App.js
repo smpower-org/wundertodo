@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import {view as Login} from './login/';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        Wundertodo_web
+        <Login />
       </div>
     );
   }
