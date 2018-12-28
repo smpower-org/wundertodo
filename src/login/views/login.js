@@ -1,4 +1,5 @@
 import React from 'react';
+import {view as Input} from '../../common/input/';
 
 import './login.css';
 
@@ -33,21 +34,19 @@ class Login extends React.Component {
       <div className="login">
         <img className="login-logo" src={logo} alt="wundertodo's logo" />
 	<div className="login-inputs">
-	  <div className="login-email">
-	    <input 
+	  <div className="login-inputs-wrapper">
+	    <Input 
 	      onChange={(event) => this.onEmailChange(event)}
 	      value={this.state.emailValue}
+	      placeholder="Enter your email"
 	    />
-	    <span className="login-input-placeholder">Enter your email</span>
-	    <span className="login-input-line"></span>
 	  </div>
-	  <div className="login-password">
-	    <input 
+	  <div className="login-inputs-wrapper">
+	    <Input 
 	      onChange={(event) => this.onPasswordChange(event)}
 	      value={this.state.passwordValue}
+	      placeholder="Enter your password"
 	    />
-	    <span className="login-input-placeholder">Enter your password</span>
-	    <span className="login-input-line"></span>
 	  </div>
 	</div>
       </div>
