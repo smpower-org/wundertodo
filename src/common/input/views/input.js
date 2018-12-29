@@ -10,10 +10,12 @@ function Input(props) {
     <div className="login-inputs-wrapper">
       <input 
 	onChange={props.onChange}
+	onFocus={props.onFocus}
+	onBlur={props.onBlur}
 	value={props.value}
       />
-      <span className="login-input-placeholder">{props.placeholder}</span>
-      <span className="login-input-line"></span>
+      <span className={props.isFocus ? "login-input-placeholder active" : "login-input-placeholder"}>{props.placeholder}</span>
+      <span className={props.isFocus ? "login-input-line active" : "login-input-line"}></span>
     </div>
   );
 }
